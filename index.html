@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>QQDOL — Taste of Thailand, Soul of Indonesia</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <a href="#home" class="logo">
+      <img src="asset/logo1.png" alt="Logo QQDOL">
+    </a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#menu">Menu</a>
+      <a href="#story">Keunikan</a>
+      <a href="https://www.instagram.com/qqdoll.id">Kontak</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+      <div class="hero-text">
+
+        <div class="badge">
+          🇹🇭 Thailand × 🇮🇩 Indonesia
+        </div>
+
+        <h1>
+          Kenalan dengan<br>
+          <span>QQDOL</span>
+        </h1>
+
+        <p>
+          Perpaduan inspirasi Thailand dan cita rasa Indonesia
+          dalam satu sajian yang unik, segar, dan kekinian.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#menu" class="btn primary">
+            Lihat Produk
+          </a>
+
+          <a href="#about" class="btn secondary">
+            Cerita QQDOL
+          </a>
+
+        </div>
+
+
+        <div class="mini-info">
+
+          <div>
+            <b>Rp15K</b>
+            <small>Harga / cup</small>
+          </div>
+
+          <div>
+            <b>Fresh</b>
+            <small>Bahan pilihan</small>
+          </div>
+
+          <div>
+            <b>Unique</b>
+            <small>Thailand × Indonesia</small>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUK -->
+      <div class="hero-product">
+
+        <div class="glow"></div>
+
+        <div class="cup">
+
+          <div class="cup-top"></div>
+
+          <div class="drink">
+            QQ
+          </div>
+
+          <div class="toppings">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <div class="cup-label">
+            QQDOL
+          </div>
+
+        </div>
+
+
+        <div class="floating-card card-one">
+          🥤 <b>Fresh & Fun</b>
+        </div>
+
+        <div class="floating-card card-two">
+          ✨ <b>Unique Taste</b>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- TENTANG -->
+    <section id="about" class="section about">
+
+      <div class="section-title">
+
+        <span>
+          01 — TENTANG KAMI
+        </span>
+
+        <h2>
+          Dua inspirasi,
+          <br>
+          <em>satu rasa.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <article class="story-card thailand">
+
+          <div class="flag">
+            🇹🇭
+          </div>
+
+          <h3>
+            QQ — Thailand
+          </h3>
+
+          <p>
+            Bagian "QQ" terinspirasi dari kuliner Thailand
+            dan menghadirkan karakter tekstur yang menarik.
+          </p>
+
+        </article>
+
+
+        <div class="plus">
+          +
+        </div>
+
+
+        <article class="story-card indonesia">
+
+          <div class="flag">
+            🇮🇩
+          </div>
+
+          <h3>
+            DOL — Indonesia
+          </h3>
+
+          <p>
+            Bagian "DOL" membawa sentuhan Indonesia
+            sebagai identitas lokal dalam inovasi produk.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- MENU -->
+    <section id="menu" class="section menu-section">
+
+      <div class="section-title center">
+
+        <span>
+          02 — PRODUK
+        </span>
+
+        <h2>
+          QQDOL <em>favoritmu</em>
+        </h2>
+
+        <p>
+          Produk disajikan dalam kemasan praktis
+          dengan perpaduan tekstur dan rasa yang menarik.
+        </p>
+
+      </div>
+
+
+      <div class="product-grid">
+
+
+        <!-- PRODUK 1 -->
+        <article class="product-card featured">
+
+          <div class="product-visual">
+
+            <div class="small-cup"></div>
+
+            <span class="tag">
+              BEST SELLER
+            </span>
+
+          </div>
+
+
+          <div class="product-content">
+
+            <h3>
+              QQDOL Original
+            </h3>
+
+            <p>
+              QQ Balls yang kenyal, cincau yang menyegarkan,
+              dan rasa manis yang cocok dinikmati kapan saja.
+            </p>
+
+
+            <div class="price-row">
+
+              <strong>
+                Rp13.000
+              </strong>
+
+              <button onclick="orderProduct('QQDOL Original')">
+                Pesan
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- PRODUK 2 -->
+        <article class="product-card">
+
+          <div class="product-visual alt">
+
+            <div class="small-cup"></div>
+
+          </div>
+
+
+          <div class="product-content">
+
+            <h3>
+              QQDOL Special
+            </h3>
+
+            <p>
+              Varian spesial yang dapat dikembangkan
+              dengan topping dan kombinasi rasa sesuai inovasi QQDOL.
+            </p>
+
+
+            <div class="price-row">
+
+              <strong>
+                Rp15.000
+              </strong>
+
+              <button onclick="orderProduct('QQDOL Special')">
+                Pesan
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <p class="note">
+        *Varian dapat disesuaikan dengan produk yang tersedia.
+      </p>
+
+    </section>
+
+
+
+    <!-- KEUNIKAN -->
+    <section id="story" class="section feature-section">
+
+
+      <div class="feature-image">
+
+        <div class="pattern">
+          QQ
+          <br>
+          DOL
+        </div>
+
+      </div>
+
+
+      <div class="feature-content">
+
+        <span>
+          03 — KENAPA QQDOL?
+        </span>
+
+        <h2>
+          Unik, praktis,
+          <br>
+          <em>dan kekinian.</em>
+        </h2>
+
+        <p>
+          QQDOL dibuat untuk menghadirkan pengalaman menikmati
+          produk yang berbeda melalui perpaduan inspirasi modern
+          dan sentuhan Indonesia.
+        </p>
+
+
+        <div class="features">
+
+
+          <div>
+
+            <b>
+              01
+            </b>
+
+            <span>
+
+              <strong>
+                Rasa & tekstur
+              </strong>
+
+              <small>
+                Perpaduan tekstur yang menarik.
+              </small>
+
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <b>
+              02
+            </b>
+
+            <span>
+
+              <strong>
+                Kemasan praktis
+              </strong>
+
+              <small>
+                Mudah dibawa dan dinikmati.
+              </small>
+
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <b>
+              03
+            </b>
+
+            <span>
+
+              <strong>
+                Cocok untuk anak muda
+              </strong>
+
+              <small>
+                Tampilan kekinian dan menarik.
+              </small>
+
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+    <section class="section cta">
+
+      <div>
+
+        <span>
+          READY TO TRY?
+        </span>
+
+        <h2>
+          Satu cup,
+          <br>
+          <em>dua budaya.</em>
+        </h2>
+
+      </div>
+
+
+      <a href="#contact" class="btn light">
+        Pesan QQDOL →
+      </a>
+
+    </section>
+
+
+
+    <!-- KONTAK -->
+    <section id="contact" class="section contact">
+
+      <div class="section-title">
+
+        <span>
+          04 — KONTAK
+        </span>
+
+        <h2>
+          Yuk, cobain
+          <em>QQDOL!</em>
+        </h2>
+
+        <p>
+          Hubungi kami untuk pemesanan dan informasi produk.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+
+        <div>
+
+          <span>
+            📱
+          </span>
+
+          <h3>
+            WhatsApp
+          </h3>
+
+          <p>
+            Hubungi untuk pemesanan
+          </p>
+
+          <a href="https://wa.me/6285817575787?text=saya+mau+beli+Dong+terimakasih.">
+            Chat Sekarang →
+          </a>
+
+        </div>
+
+
+
+        <div>
+
+          <span>
+            📍
+          </span>
+
+          <h3>
+            SMKS HangTuah 1 Jakarta
+          </h3>
+
+          <p>
+            Lingkungan sekolah & sekitar
+          </p>
+
+          <a href="#contact">
+            Open PO →
+          </a>
+
+        </div>
+
+
+
+        <div>
+
+          <span>
+            📸
+          </span>
+
+          <h3>
+            QQDOL.id
+          </h3>
+
+          <p>
+            Ikuti perkembangan QQDOL
+          </p>
+
+          <a href="https://www.instagram.com/qqdoll.id">
+            Follow Kami →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      <span>QQ</span>DOL
+    </div>
+
+    <p>
+      Taste of Thailand, Soul of Indonesia.
+    </p>
+
+    <small>
+      © 2026 QQDOL — Kelompok 2
+    </small>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
